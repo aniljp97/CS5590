@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>success</title>
+</head>
+<body>
+
+<!--<button onclick="myFunction()" type="button">Change Audio</button><br>-->
+
+<p>File uploaded successfully</p>
+<p>File Name: {{name}}</p>
+<h1>Audio_Result</h1>
+<audio  controls>
+    <source src="audio" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+<script>
+var aud;
+function myFunction() {
+   aud = document.createElement('myAudio');
+   aud.setAttribute('src', 'audio');
+}
+</script>
+ <button type = "button"
+          onclick = "song.play()">
+    play
+  </button>
+
+
+<h2>Lables to the audio</h2>
+<p>detection: {{detection}}</p>
+</body>
+</html>
